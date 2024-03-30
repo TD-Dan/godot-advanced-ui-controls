@@ -5,3 +5,5 @@ Add the Control to your 2D Scene and select:
  - OR custom node path to search for
    
  - variable name to edit
+
+![image](https://github.com/TD-Dan/godot-advanced-ui-controls/blob/main/doc/Screenshot_ui.png)
