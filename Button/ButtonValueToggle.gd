@@ -24,6 +24,9 @@ var _custom_path : String
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	toggle_mode = true
+	toggled.connect(_on_toggled)
+	
 	var tnode = get_node_or_null(_target_node)
 	if not tnode:
 		tnode = get_node_or_null(_custom_path)
@@ -34,7 +37,8 @@ func _ready():
 		disabled = true
 
 
-func _toggled(_button_pressed):
+func _on_toggled(_button_pressed):
+	print("toggled")
 	var tnode = get_node_or_null(_target_node)
 	if not tnode:
 		tnode = get_node_or_null(_custom_path)
